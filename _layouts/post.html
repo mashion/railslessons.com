@@ -10,5 +10,6 @@ layout: default
 </div>
 
 {% if site.disqus %}
-  <div id="disqus_thread"><noscript><a href="http://disqus.com/forums/matschaffer/?url=ref">View the discussion thread.</a></noscript></div>
+  <div id="disqus_thread"><noscript><a href="http://disqus.com/forums/{{ site.disqus }}/?url=ref">View the discussion thread.</a></noscript></div>
+  {% include disqus_thread.html %}
 {% endif %}
