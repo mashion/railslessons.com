@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div id="posts">
+  <div class="post">
+    <h1>{{ page.title | xml_escape }}</h1>
+    <a href="/" class="home">back to home page</a>
+    {{ content }}
+  </div>
+</div>
+
+{% if site.disqus %}
+  <div id="disqus_thread"><noscript><a href="http://disqus.com/forums/matschaffer/?url=ref">View the discussion thread.</a></noscript></div>
+{% endif %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    {% if site.disqus %}<link rel="stylesheet" href="http://disqus.com/stylesheets/{{ site.disqus }}/disqus.css?v=2.0" type="text/css" />{% endif %}
+    {% for css in page.css %}
+      <link rel="stylesheet" href="{{ css }}" type="text/css" />
+    {% endfor %}
+  </head>
+  <body>
+    {{ content }}
+    {% if site.disqus %}{% include disqus.html %}{% endif %}
+    {% if site.clicky %}{% include clicky.html %}{% endif %}
+    {% if site.ga %}{% include ga.html %}{% endif %}
+    {% for js in page.js %}
+      <script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+    {% endfor %}
+  </body>
+</html>

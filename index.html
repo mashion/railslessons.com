@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1>{{ site.title }}</h1>
+<div id="posts">
+{% for post in site.posts limit:5 %}
+  <div class="post">
+    <a class="h2" href="{{ post.url }}">{{ post.title | xml_escape }}</a>
+    {{ post.content }}
+    <div class="footer">
+      &mdash; {{ post.date | date_to_string }}
+      {% if site.disqus %}<a href="{{ post.url }}#disqus_thread">Add a comment</a>{% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>

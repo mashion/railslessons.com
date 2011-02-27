@@ -1,0 +1,11 @@
+url: http://myblog.com
+title: My Blog
+author: Me
+email: me@myblog.com
+pygments: true
+disqus:
+clicky:
+ga:
+exclude:
+  - Rakefile
+  - README
