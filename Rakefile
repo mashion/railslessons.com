@@ -35,7 +35,7 @@ task :deploy => "deploy:dreamhost"
 namespace :deploy do
   desc "Deploy to Dreamhost"
   task :dreamhost => :build do
-    rsync "penguin.dreamhost.com:~/sites/railslessons.com/jekyll"
+    rsync "penguin.dreamhost.com:~/sites/railslessons.com"
   end
 
   def rsync(destination)
