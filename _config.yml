@@ -1,11 +1,9 @@
-url: http://myblog.com
-title: My Blog
-author: Me
-email: me@myblog.com
+url: http://railslessons.com
+title: RailsLessons.com
+author: Mat Schaffer
+email: mat@mashion.net
 pygments: true
-disqus:
-clicky:
-ga:
+disqus: railslessons
 exclude:
   - Rakefile
   - README
