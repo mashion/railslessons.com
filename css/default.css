@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'MidoMedium';
+  src: url('../fonts/Mido-webfont.eot');
+  src: url('../fonts/Mido-webfont.eot?iefix') format('eot'),
+       url('../fonts/Mido-webfont.woff') format('woff'),
+       url('../fonts/Mido-webfont.ttf') format('truetype'),
+       url('../fonts/Mido-webfont.svg#webfontNCLiedwu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'MidoMedium';
+}
+
+.post {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
